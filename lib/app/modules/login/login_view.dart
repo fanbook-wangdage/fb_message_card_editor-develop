@@ -19,7 +19,7 @@ class LoginPage  extends GetView<LoginLogic>{
         children: <Widget>[
           sizeHeight46,
           Text(
-            '手机号码登录'.tr,
+            '随便输入11位数字：'.tr,
             style: appThemeData.textTheme.bodyLarge?.copyWith(
                 fontSize: 24, height: 1.16, fontWeight: FontWeight.w600),
           ),
@@ -83,7 +83,7 @@ class LoginPage  extends GetView<LoginLogic>{
                             contentPadding: const EdgeInsets.symmetric(
                                 horizontal: 16, vertical: 9),
                             border: InputBorder.none,
-                            hintText: '请输入手机号'.tr,
+                            hintText: '随便输入11位数字'.tr,
                             hintStyle:
                             appThemeData.textTheme.bodySmall?.copyWith(
                               color: appThemeData.disabledColor

@@ -48,7 +48,7 @@ class CaptchaPage extends GetView<CaptchaLogic> {
               ),
             ),
             SizedBox(height: isLandscape ? 18 : 48),
-            Text('输入验证码'.tr,
+            Text('随便输入验证码'.tr,
                 style: appThemeData.textTheme.bodyLarge?.copyWith(
                   fontSize: 24,
                   height: 1.16,
