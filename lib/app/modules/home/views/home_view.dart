@@ -259,35 +259,36 @@ class HomeView extends GetView<HomeController> {
   }
 
   _centerView(Widget child) => Container(
-        padding: const EdgeInsets.all(20),
-        width: centerWidth,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              _deleteBtn(),
-              Row(
-                children: [
-                  _sendToMeBtn(),
-                  sizeWidth8,
-                  _sendToGuildBtn(),
-                  sizeWidth8,
-                  _saveBtn(),
-                ],
-              )
-            ]),
-            const SizedBox(height: 10),
-            Text('卡片预览', style: appThemeData.textTheme.titleMedium),
-            buildChinaText(),
-            _dividerW(),
-            Expanded(child: child)
-          ],
-        ),
-      );
+    padding: const EdgeInsets.all(20),
+    width: centerWidth,
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          _deleteBtn(),
+          Row(
+            children: [
+              Text('王大哥重制版', style: appThemeData.textTheme.titleMedium),//可以填写你的备案号
+              sizeWidth8,
+              _sendToGuildBtn(),
+              sizeWidth8,
+              _saveBtn(),
+            ],
+          )
+        ]),
+        const SizedBox(height: 10),
+        Text('卡片预览', style: appThemeData.textTheme.titleMedium),
+        buildChinaText(),
+        _dividerW(),
+        Expanded(child: child)
+      ],
+    ),
+  );
+
 
   _deleteBtn() => buildMaterialButton('清空', controller.removeAll);
 
-  _sendToMeBtn() => buildMaterialButton('向我发送预览', _sendToMeDialog);
+  // _sendToMeBtn() => buildMaterialButton('向我发送预览', _sendToMeDialog);
 
   _saveBtn() => buildMaterialButton('保存', controller.save);
 
@@ -303,17 +304,17 @@ class HomeView extends GetView<HomeController> {
             content: Container(
               color: Colors.white,
               width: 300,
-              height: 440,
+              height: 170,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text('发送到，1926服务器，卡片编辑器频道',
+                  Text('发送到王大哥机器人体验中心，卡片编辑器频道',
                       style: appThemeData.textTheme.titleMedium),
                   const SizedBox(height: 10),
                   Image.asset(
                     "${Config.ASSETS_IMG}invite.jpg",
                     width: 240,
-                    height: 360,
+                    height: 60,
                   ),
                   const SizedBox(height: 10),
                   Row(

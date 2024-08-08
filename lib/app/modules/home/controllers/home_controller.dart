@@ -167,7 +167,7 @@ class HomeController extends GetxController with GetTickerProviderStateMixin {
   }
 
   sendToGuild() async {
-    var result = await UserApi.sendPreView(436889889649201152, showMap!);
+    var result = await UserApi.sendPreView(662128198695641088, showMap!);
     print('result:$result');
     EasyLoading.showSuccess('发送成功');
   }

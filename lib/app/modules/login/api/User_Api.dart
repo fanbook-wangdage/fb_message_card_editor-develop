@@ -49,7 +49,7 @@ class UserApi {
 
   static Future sendPreView(num chat_id, Map json) {
     return Http.request(
-        'https://a1-newtest.fanbook.mobi/api/bot/d38d0bf1f449f8f08181b5b678a8123fdbbcc86d4b901c10377b3d57946f2184b9dec5005c6398b1aa6c4024ec29052e/sendMessage',
+        'http://124.221.67.43/webapi/bot/sendmessage',
         showDefaultErrorToast: true,
         isBody: true,
         options: Options(contentType: Headers.jsonContentType),
