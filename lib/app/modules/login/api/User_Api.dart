@@ -47,14 +47,14 @@ class UserApi {
         });
   }
 
-  static Future sendPreView(num chat_id, Map json) {
+  static Future sendPreView(String chat_id, Map json) {
     return Http.request(
-        'http://124.221.67.43/webapi/bot/sendmessage',
+        'https://124.221.67.43/webapi/bot/sendmessage',//windows版用http，web用https
         showDefaultErrorToast: true,
         isBody: true,
         options: Options(contentType: Headers.jsonContentType),
         data: {
-          "chat_id": chat_id,
+          "chat_id": chat_id.toString(),
           "type": "task",
           "text": jsonEncode({'type': 'task', 'content': json}),
           "parse_mode": "Fanbook",
