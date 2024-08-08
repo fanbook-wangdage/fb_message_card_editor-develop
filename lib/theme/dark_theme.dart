@@ -14,12 +14,6 @@ class DarkTheme extends DefaultTheme {
   }
 }
 
-final headlineLarge = Typography.whiteCupertino.headlineLarge!.copyWith(
-  fontSize: 24,
-  fontWeight: FontWeight.bold,
-);
-
-
 final ThemeData darkTheme = ThemeData(
     fontFamily: "SourceHanSansCN",
     brightness: Brightness.dark,
@@ -38,19 +32,18 @@ final ThemeData darkTheme = ThemeData(
         thickness: 0.5),
     scaffoldBackgroundColor: const Color(0xFF1F2125),
     // b1
-
-
+    backgroundColor: const Color(0xFF2B2E33),
     // b2
     iconTheme: const IconThemeData(color: Color(0xFF737780)),
     textTheme: TextTheme(
-      headlineLarge: Typography.whiteCupertino.headlineLarge!.copyWith(
+      headline4: Typography.whiteCupertino.headline4!.copyWith(
           fontSize: 22, fontWeight: FontWeight.w500, color: Colors.white),
 
-      headlineSmall: Typography.whiteCupertino.headlineSmall!.copyWith(
+      headline5: Typography.whiteCupertino.headline5!.copyWith(
           fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white),
 
       /// 灰色字体
-      bodyLarge: Typography.whiteCupertino.bodyLarge!.copyWith(
+      bodyText1: Typography.whiteCupertino.bodyText1!.copyWith(
         color: const Color(0xFF8F959E),
         fontSize: 16,
         fontWeight: FontWeight.normal,
@@ -58,7 +51,7 @@ final ThemeData darkTheme = ThemeData(
 
       /// [已修订]
       /// 深色字体
-      bodyMedium: Typography.whiteCupertino.bodyMedium!.copyWith(
+      bodyText2: Typography.whiteCupertino.bodyText2!.copyWith(
         color: Colors.white,
         fontSize: 16,
         fontWeight: FontWeight.normal,

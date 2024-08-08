@@ -276,6 +276,7 @@ Scaffold popWrap(
         height: height,
         padding: EdgeInsets.symmetric(horizontal: horizontal),
         decoration: BoxDecoration(
+            color: Get.theme.backgroundColor,
             borderRadius: const BorderRadius.all(Radius.circular(8))),
         child: child,
       ),

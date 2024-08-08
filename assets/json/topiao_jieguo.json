@@ -1,0 +1,65 @@
+{
+    "isVoted": 1,
+    "type": "column",
+    "children": [
+        {
+            "type": "vo_title",
+            "param": {
+                "type": 0,
+                "bg": 0,
+                "text": "投票结果"
+            }
+        },
+        {
+            "type": "con_text",
+            "param": {
+                "text": "111",
+                "type": 0
+            }
+        },
+        {
+            "type": "vo_text",
+            "param": {
+                "total": 1,
+                "pre": "A. ",
+                "text": "111(已选)",
+                "type": 0,
+                "ratio": 1.0
+            }
+        },
+        {
+            "type": "vo_text",
+            "param": {
+                "total": 0,
+                "pre": "B. ",
+                "text": "111",
+                "type": 1,
+                "ratio": 0.0
+            }
+        },
+        {
+            "param": {
+                "title": "1人参与",
+                "text": "@王大哥创建"
+            },
+            "type": "hin_text"
+        },
+        {
+            "param": {
+                "list": [
+                    {
+                        "type": 0,
+                        "text": "查看投票详情",
+                        "event": {
+                            "method": "mini_program",
+                            "param": {
+                                "appId": "http://open.fanbook.mobi/mp/195452636021915648/222234839762337792/vote/v1/?fb_redirect&open_type=mp#/vote?id=10790"
+                            }
+                        }
+                    }
+                ]
+            },
+            "type": "button"
+        }
+    ]
+}

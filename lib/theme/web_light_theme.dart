@@ -62,24 +62,25 @@ final ThemeData webLightTheme = ThemeData(
         color: Color(0xFFDEE0E3), space: 0, thickness: 1),
     scaffoldBackgroundColor: const Color(0xFFF2F3F5),
     // a1
+    backgroundColor: Colors.white,
     // a2
     iconTheme: const IconThemeData(color: Color(0xFF8F959E)),
     textTheme: TextTheme(
-      headlineLarge: Typography.whiteCupertino.headlineLarge!.copyWith(
+      headline4: Typography.whiteCupertino.headline4!.copyWith(
         fontSize: 22,
         fontWeight: FontWeight.w500,
         color: const Color(0xFF17181A),
       ),
 
       // [已修订]
-      headlineLarge: Typography.blackCupertino.headlineLarge!.copyWith(
+      headline5: Typography.blackCupertino.headline5!.copyWith(
         fontSize: 16,
         fontWeight: FontWeight.normal,
         color: const Color(0xFF17181A),
       ),
 
       /// 灰色字体
-      bodyLarge: Typography.blackCupertino.bodyLarge!.copyWith(
+      bodyText1: Typography.blackCupertino.bodyText1!.copyWith(
         color: const Color(0xFF8F959E),
         fontSize: 14,
         fontWeight: FontWeight.normal,
@@ -87,7 +88,7 @@ final ThemeData webLightTheme = ThemeData(
       ),
 
       /// 深色字体
-      bodyMedium: Typography.blackCupertino.bodyMedium!.copyWith(
+      bodyText2: Typography.blackCupertino.bodyText2!.copyWith(
         color: const Color(0xFF1F2125),
         fontSize: 14,
         fontWeight: FontWeight.normal,

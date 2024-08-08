@@ -537,6 +537,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     });
                   },
                   onEdit: () async {
+                    print('111');
                     final value =
                         await FullScreenDialog.getInstance().showDialog(
                             context,
@@ -579,6 +580,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ClipboardData(text: jsonEncode(value)));
                         ToastWidget()
                             .showToast('复制成功', second: 1, color: Colors.blue);
+                            print("复制成功");
                       },
                     ),
                     top: 10,

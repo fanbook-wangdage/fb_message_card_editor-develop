@@ -52,6 +52,7 @@ final ThemeData appThemeData = ThemeData(
   primarySwatch: _primarySwatch,
   fontFamily: "SourceHanSansCN",
   visualDensity: VisualDensity.adaptivePlatformDensity,
+  backgroundColor: Colors.white,
   scaffoldBackgroundColor: _backgroundGray,
   iconTheme: const IconThemeData(color: _iconGray, size: 24),
   // 这个颜色值也会用来表示 UI 页面上的浅色部分（图标和文本），从目前的规范定义上看，就使用 dividerColor
@@ -63,11 +64,11 @@ final ThemeData appThemeData = ThemeData(
       thickness: 0.5),
   disabledColor: _iconGray,
   textTheme: const TextTheme(
-    headlineMedium: TextStyle(color: _fontColor, fontSize: 22),
+    headline1: TextStyle(color: _fontColor, fontSize: 22),
     // headline2 仅定义颜色值，用在页面上较灰色的文字展示
-    headlineSmall: TextStyle(color: _lightGray),
-    bodyLarge: TextStyle(color: _fontColor, fontSize: 17),
-    bodyMedium: TextStyle(color: _fontColor, fontSize: 16),
-    bodySmall: TextStyle(color: _iconGray, fontSize: 14),
+    headline2: TextStyle(color: _lightGray),
+    bodyText1: TextStyle(color: _fontColor, fontSize: 17),
+    bodyText2: TextStyle(color: _fontColor, fontSize: 16),
+    caption: TextStyle(color: _iconGray, fontSize: 14),
   ),
 );

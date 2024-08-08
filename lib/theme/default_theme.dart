@@ -79,6 +79,7 @@ class DefaultTheme {
       brightness: Brightness.light,
       highlightColor: Colors.transparent,
       splashFactory: const NoSplashFactory(),
+      toggleableActiveColor: primaryColor,
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
         elevation: MaterialStateProperty.all(0),
@@ -103,26 +104,27 @@ class DefaultTheme {
       ),
       scaffoldBackgroundColor: const Color(0xFFF2F4F7),
       // a1
+      backgroundColor: Colors.white,
       // a2
       iconTheme: const IconThemeData(color: Color(0xFF363940)),
       textTheme: TextTheme(
-        headlineSmall: Typography.whiteCupertino.headlineSmall!
+        headline3: Typography.whiteCupertino.headline3!
             .copyWith(color: const Color(0xFF1F2329)),
-        headlineLarge: Typography.whiteCupertino.headlineLarge!.copyWith(
+        headline4: Typography.whiteCupertino.headline4!.copyWith(
           fontSize: 22,
           fontWeight: FontWeight.w500,
           color: const Color(0xFF17181A),
         ),
 
         // [已修订]
-        headlineMedium: Typography.blackCupertino.headlineLarge!.copyWith(
+        headline5: Typography.blackCupertino.headline5!.copyWith(
           fontSize: 17,
           fontWeight: FontWeight.w600,
           color: const Color(0xFF1F2125),
         ),
 
         /// 灰色字体
-        bodyLarge: Typography.blackCupertino.bodyLarge!.copyWith(
+        bodyText1: Typography.blackCupertino.bodyText1!.copyWith(
           color: const Color(0xFF646A73),
           fontSize: 16,
           fontWeight: FontWeight.normal,
@@ -130,7 +132,7 @@ class DefaultTheme {
         ),
 
         /// 深色字体
-        bodyMedium: Typography.blackCupertino.bodyMedium!.copyWith(
+        bodyText2: Typography.blackCupertino.bodyText2!.copyWith(
           color: const Color(0xFF1F2125),
           fontSize: 16,
           fontWeight: FontWeight.normal,

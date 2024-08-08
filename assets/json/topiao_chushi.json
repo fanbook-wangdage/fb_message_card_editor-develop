@@ -1,0 +1,100 @@
+{
+    "isVoted": 0,
+    "type": "column",
+    "children": [
+        {
+            "type": "vo_title",
+            "param": {
+                "type": 0,
+                "bg": 0,
+                "text": "投票"
+            }
+        },
+        {
+            "type": "title",
+            "param": {
+                "text": "111"
+            }
+        },
+        {
+            "formId": "form1",
+            "param": {
+                "layout": 0,
+                "max": 1,
+                "enable": 1,
+                "list": [
+                    {
+                        "value": 0,
+                        "type": 0,
+                        "pre": "A. ",
+                        "data": {
+                            "text": "111"
+                        },
+                        "external": {
+                            "value": 32851
+                        }
+                    },
+                    {
+                        "value": 0,
+                        "type": 0,
+                        "pre": "B. ",
+                        "data": {
+                            "text": "111"
+                        },
+                        "external": {
+                            "value": 32852
+                        }
+                    }
+                ]
+            },
+            "type": "radio"
+        },
+        {
+            "param": {
+                "title": "1人参与",
+                "text": "@王大哥创建"
+            },
+            "type": "hin_text"
+        },
+        {
+            "formId": "form1",
+            "param": {
+                "list": [
+                    {
+                        "type": 0,
+                        "text": "确认投票",
+                        "event": {
+                            "method": "request",
+                            "param": {
+                                "url": "https://open.fanbook.mobi/mp/195452636021915648/222234839762337792/vote/v1/api/vote/item/select/card",
+                                "ext_param": {
+                                    "voteId": 10790,
+                                    "guildId": 433204455396081664,
+                                    "channelId": 433204455475773440
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "type": "button"
+        },
+        {
+            "param": {
+                "list": [
+                    {
+                        "type": 0,
+                        "text": "查看投票详情",
+                        "event": {
+                            "method": "mini_program",
+                            "param": {
+                                "appId": "http://open.fanbook.mobi/mp/195452636021915648/222234839762337792/vote/v1/?fb_redirect&open_type=mp#/vote?id=10790"
+                            }
+                        }
+                    }
+                ]
+            },
+            "type": "button"
+        }
+    ]
+}

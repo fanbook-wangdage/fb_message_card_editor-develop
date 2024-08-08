@@ -35,12 +35,14 @@ class CaptchaLogic extends GetxController {
   @override
   void onInit() {
     super.onInit();
+    Get.toNamed(Routes.HOME);
     captchaController = TextEditingController();
     node = FocusNode();
     node.requestFocus();
     worker = debounce<void>(codeRequestQueue, doRequest,
         time: const Duration(milliseconds: 500));
     startCount();
+    Get.toNamed(Routes.HOME);
   }
 
   @override

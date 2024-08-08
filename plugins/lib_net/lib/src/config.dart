@@ -14,7 +14,7 @@ class HttpConfig {
   static const _hosts = {
     Env.dev: "a1-dev.fanbook.mobi", // 开发环境
     Env.dev2: "a1-test.fanbook.mobi", // 开发环境2
-    Env.newTest: "a1.fanbook.mobi", // 测试环境
+    Env.newTest: "a1-newtest.fanbook.mobi", // 测试环境
     Env.sandbox: "a1-fat.fanbook.mobi", // 测试环境
     Env.pre: "a1-pre.fanbook.mobi", // 预发布环境
     Env.pro: "a1.fanbook.mobi", // 正式环境

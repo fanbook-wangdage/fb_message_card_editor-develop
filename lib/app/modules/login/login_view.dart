@@ -19,14 +19,14 @@ class LoginPage  extends GetView<LoginLogic>{
         children: <Widget>[
           sizeHeight46,
           Text(
-            '随便输入11位数字：'.tr,
-            style: appThemeData.textTheme.bodyLarge?.copyWith(
+            '手机号码登录'.tr,
+            style: appThemeData.textTheme.bodyText1?.copyWith(
                 fontSize: 24, height: 1.16, fontWeight: FontWeight.w600),
           ),
           buildChinaText(),
           sizeHeight12,
           Text('%s的手机号验证后自动登录'.trArgs(['未注册'.tr]),
-              style: appThemeData.textTheme.bodySmall?.copyWith(
+              style: appThemeData.textTheme.caption?.copyWith(
                 fontSize: 12,
                 height: 1.21,
               )),
@@ -56,7 +56,7 @@ class LoginPage  extends GetView<LoginLogic>{
                                     children: <Widget>[
                                       Text(
                                         '+86',
-                                        style: appThemeData.textTheme.bodyLarge
+                                        style: appThemeData.textTheme.bodyText1
                                             ?.copyWith(
                                             fontSize: 14,
                                             fontWeight: FontWeight.w600),
@@ -77,15 +77,15 @@ class LoginPage  extends GetView<LoginLogic>{
                             LengthLimitingTextInputFormatter(11), //限制长度
                             FilteringTextInputFormatter.digitsOnly,
                           ],
-                          style: appThemeData.textTheme.bodyLarge
+                          style: appThemeData.textTheme.bodyText1
                               ?.copyWith(fontSize: 14),
                           decoration: InputDecoration(
                             contentPadding: const EdgeInsets.symmetric(
                                 horizontal: 16, vertical: 9),
                             border: InputBorder.none,
-                            hintText: '随便输入11位数字'.tr,
+                            hintText: '请输入手机号'.tr,
                             hintStyle:
-                            appThemeData.textTheme.bodySmall?.copyWith(
+                            appThemeData.textTheme.caption?.copyWith(
                               color: appThemeData.disabledColor
                                   .withOpacity(0.4),
                             ),

@@ -86,7 +86,7 @@ class _CustomRadioState extends State<CustomRadio> {
             const SizedBox(width: 5),
             Text(
               title,
-              style: theme.textTheme.bodyLarge.copyWith(
+              style: theme.textTheme.bodyText1.copyWith(
                   fontSize: 15,
                   color: select ? theme.primaryColor : const Color(0xff646A73),
                   height: 1.2),

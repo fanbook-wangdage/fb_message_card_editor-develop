@@ -47,6 +47,9 @@ dependencies:
   # 用于decoration的虚线边框，类似BoxDocoration https://github.com/mdalameen/dotted_decoration
   dotted_decoration: ^2.0.0
 
+  dynamic_widget:
+    git:
+      url: https://gitee.com/fanbook/dynamic_widget.git
 
   dynamic_card:
     path: ./plugins/dynamic_card_editor
@@ -146,5 +149,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-dependency_overrides:
-   intl: ^0.17.0-nullsafety.2

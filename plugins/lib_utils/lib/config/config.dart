@@ -68,7 +68,7 @@ class Config {
   /// 当前服务器环境
   static Env env = Env.pro;
 
-  static bool autoLogin = false;
+  static bool autoLogin = true;
 
   /// 渠道
   static String channel = "ios";

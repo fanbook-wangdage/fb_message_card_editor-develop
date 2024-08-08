@@ -377,6 +377,8 @@ class HomeView extends GetView<HomeController> {
             ));
       });
 
+
+
   _logout() => buildMaterialButton('退出登录', () async {
         showDialog<Null>(
             context: Get.context!,
@@ -677,7 +679,7 @@ class HomeView extends GetView<HomeController> {
                               children: [
                                 Text(
                                   e.text ?? "",
-                                  style: appThemeData.textTheme.bodyLarge,
+                                  style: appThemeData.textTheme.bodyText1,
                                 ),
                                 sizeHeight10,
                                 _dynamicWidget(
@@ -721,7 +723,7 @@ class HomeView extends GetView<HomeController> {
                             : Container(),
                         sizeWidth10,
                         Text(item?.text ?? "",
-                            style: appThemeData.textTheme.bodyLarge!
+                            style: appThemeData.textTheme.bodyText1!
                                 .copyWith(fontSize: 18))
                       ],
                     ),
@@ -753,7 +755,7 @@ class HomeView extends GetView<HomeController> {
                                           sizeWidth10,
                                           Text(child.text ?? "",
                                               style: appThemeData
-                                                  .textTheme.bodyLarge!
+                                                  .textTheme.bodyText1!
                                                   .copyWith(
                                                       fontSize: 16,
                                                       color: Colors.black87))

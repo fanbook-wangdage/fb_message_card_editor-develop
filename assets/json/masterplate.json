@@ -26,6 +26,16 @@
       "type": "vote_result",
       "file": "vote_result.json",
       "text": "投票结果"
+    },
+    {
+      "type": "topiao_chushi",
+      "file": "topiao_chushi.json",
+      "text": "活动机器人-投票"
+    },
+    {
+      "type": "topiao_jieguo",
+      "file": "topiao_jieguo.json",
+      "text": "活动机器人-投票结果"
     }
   ]
 }

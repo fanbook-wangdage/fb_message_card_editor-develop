@@ -38,18 +38,18 @@ class CaptchaPage extends GetView<CaptchaLogic> {
                     Icon(
                       Icons.arrow_back,
                       size: 14,
-                      color: appThemeData.textTheme.bodyLarge?.color,
+                      color: appThemeData.textTheme.bodyText1?.color,
                     ),
                     Text('返回'.tr,
-                        style: appThemeData.textTheme.bodyLarge
+                        style: appThemeData.textTheme.bodyText1
                             ?.copyWith(fontSize: 14))
                   ],
                 ),
               ),
             ),
             SizedBox(height: isLandscape ? 18 : 48),
-            Text('随便输入验证码'.tr,
-                style: appThemeData.textTheme.bodyLarge?.copyWith(
+            Text('输入验证码'.tr,
+                style: appThemeData.textTheme.bodyText1?.copyWith(
                   fontSize: 24,
                   height: 1.16,
                   fontWeight: FontWeight.w600,
@@ -58,7 +58,7 @@ class CaptchaPage extends GetView<CaptchaLogic> {
               height: isLandscape ? 8 : 12,
             ),
             Text('验证码已发送至 +%s %s'.trArgs(["86", controller.mobile.toString()]),
-                style: appThemeData.textTheme.bodyLarge
+                style: appThemeData.textTheme.bodyText1
                     ?.copyWith(height: 1.21, fontSize: isLandscape ? 12 : 14)),
             const SizedBox(
               height: 32,
@@ -78,11 +78,11 @@ class CaptchaPage extends GetView<CaptchaLogic> {
                       keyboardType: TextInputType.phone,
                       controller: controller.captchaController,
                       focusNode: controller.node,
-                      // style: Theme.of(context).textTheme.bodyLarge,
+                      // style: Theme.of(context).textTheme.bodyText1,
                       inputFormatters: <TextInputFormatter>[
                         LengthLimitingTextInputFormatter(6) //限制长度
                       ],
-                      style: appThemeData.textTheme.bodyLarge
+                      style: appThemeData.textTheme.bodyText1
                           ?.copyWith(fontSize: 14),
                       decoration: InputDecoration(
                         contentPadding: const EdgeInsets.symmetric(
@@ -114,14 +114,14 @@ class CaptchaPage extends GetView<CaptchaLogic> {
                                   },
                                   child: Text(
                                     '重新发送'.tr,
-                                    style: appThemeData.textTheme.bodyLarge
+                                    style: appThemeData.textTheme.bodyText1
                                         ?.copyWith(
                                             color: appThemeData.primaryColor,
                                             fontSize: 14),
                                   ),
                                 )
                               : Text('${controller.count} s',
-                                  style: appThemeData.textTheme.bodyLarge
+                                  style: appThemeData.textTheme.bodyText1
                                       ?.copyWith(
                                           fontSize: 14,
                                           color: appThemeData.primaryColor)),

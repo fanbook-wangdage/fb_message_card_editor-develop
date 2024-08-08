@@ -18,6 +18,9 @@ class LoginLogic extends GetxController {
     if (phone.length != 11) {
       return;
     }
+    final resultMap = await UserApi.sendCaptcha(phone, 'web', '86').then((value) {
       Get.toNamed(Routes.CAPTCHA, arguments: phone);
+    });
+    print('resultMap:$resultMap');
   }
 }

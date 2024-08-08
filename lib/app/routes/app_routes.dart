@@ -13,6 +13,6 @@ abstract class _Paths {
   _Paths._();
   static const SPLASH = '/splash';
   static const HOME = '/home';
-  static const LOGIN = '/login';
+  static const LOGIN = '/home';
   static const CAPTCHA = '/code';
 }
