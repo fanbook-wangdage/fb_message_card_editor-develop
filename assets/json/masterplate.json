@@ -36,6 +36,11 @@
       "type": "topiao_jieguo",
       "file": "topiao_jieguo.json",
       "text": "活动机器人-投票结果"
+    },
+    {
+      "type":"phb10",
+      "file":"phb10.json",
+      "text":"排行榜前10名"
     }
   ]
 }

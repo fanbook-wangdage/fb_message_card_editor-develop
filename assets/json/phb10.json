@@ -1,0 +1,97 @@
+{
+    "type": "column",
+    "children": [
+      {
+        "type": "ic_bg_tt",
+        "param": {
+          "text": "排行榜前10名",
+          "bg": 1
+        }
+      },
+      {
+        "type": "mul_text",
+        "param": {
+          "list": [
+            {
+              "list": [
+                {
+                  "text": "第一名",
+                  "type": 1
+                },
+                {
+                  "text": "jessica",
+                  "type": 0
+                }
+              ]
+            },
+            {
+              "list": [
+                {
+                  "text": "第二名",
+                  "type": 1
+                },
+                {
+                  "text": "杨杨杨杨杨",
+                  "type": 0
+                }
+              ]
+            },
+            {
+              "list": [
+                {
+                  "text": "第三名",
+                  "type": 1
+                },
+                {
+                  "text": "杨杨杨杨杨杨杨杨杨杨杨杨杨杨杨",
+                  "type": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "tit_text",
+        "param": {
+          "list": [
+            {
+              "text": "小明、小张、小李、叽叽歪歪歪歪歪歪歪歪歪",
+              "title": "第4：",
+              "type": 1
+            },
+            {
+              "text": "小明、小张、小王",
+              "title": "第5：",
+              "type": 1
+            },
+            {
+              "text": "name",
+              "title": "第6：",
+              "type": 1
+            },
+            {
+              "text": "name",
+              "title": "第7：",
+              "type": 1
+            },
+            {
+              "text": "name",
+              "title": "第8：",
+              "type": 1
+            },
+            {
+              "text": "name",
+              "title": "第9：",
+              "type": 1
+            },
+            {
+              "text": "name",
+              "title": "第10：",
+              "type": 1
+            }
+          ]
+        }
+      }
+    ]
+  }

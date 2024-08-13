@@ -380,47 +380,47 @@ class HomeView extends GetView<HomeController> {
 
 
 
-  _logout() => buildMaterialButton('退出登录', () async {
-        showDialog<Null>(
-            context: Get.context!,
-            barrierDismissible: true,
-            builder: (BuildContext context) {
-              return AlertDialog(
-                  title:
-                      Text('退出登录', style: appThemeData.textTheme.titleMedium),
-                  actions: [],
-                  content: Container(
-                    color: Colors.white,
-                    width: 340,
-                    height: 100,
-                    child: SingleChildScrollView(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('是否退出登录',
-                              style: appThemeData.textTheme.titleMedium),
-                          const SizedBox(height: 10),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              buildMaterialButton('取消', () {
-                                Navigator.pop(Get.context!);
-                              }),
-                              const SizedBox(width: 10),
-                              buildMaterialButton('确定', () {
-                                controller.logout();
-                                Get.offAndToNamed(Routes.LOGIN);
-                              },
-                                  bgColor: const Color(0xFF198CFE),
-                                  txtColor: Colors.white)
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ));
-            });
-      }, bgColor: const Color(0xFF198CFE), txtColor: Colors.white);
+  // _logout() => buildMaterialButton('退出登录', () async {
+  //       showDialog<Null>(
+  //           context: Get.context!,
+  //           barrierDismissible: true,
+  //           builder: (BuildContext context) {
+  //             return AlertDialog(
+  //                 title:
+  //                     Text('退出登录', style: appThemeData.textTheme.titleMedium),
+  //                 actions: [],
+  //                 content: Container(
+  //                   color: Colors.white,
+  //                   width: 340,
+  //                   height: 100,
+  //                   child: SingleChildScrollView(
+  //                     child: Column(
+  //                       crossAxisAlignment: CrossAxisAlignment.start,
+  //                       children: [
+  //                         Text('是否退出登录',
+  //                             style: appThemeData.textTheme.titleMedium),
+  //                         const SizedBox(height: 10),
+  //                         Row(
+  //                           mainAxisAlignment: MainAxisAlignment.end,
+  //                           children: [
+  //                             buildMaterialButton('取消', () {
+  //                               Navigator.pop(Get.context!);
+  //                             }),
+  //                             const SizedBox(width: 10),
+  //                             buildMaterialButton('确定', () {
+  //                               controller.logout();
+  //                               Get.offAndToNamed(Routes.LOGIN);
+  //                             },
+  //                                 bgColor: const Color(0xFF198CFE),
+  //                                 txtColor: Colors.white)
+  //                           ],
+  //                         )
+  //                       ],
+  //                     ),
+  //                   ),
+  //                 ));
+  //           });
+  //     }, bgColor: const Color(0xFF198CFE), txtColor: Colors.white);
 
   MaterialButton buildMaterialButton(String text, VoidCallback onPress,
           {Color bgColor = Colors.white,
@@ -543,7 +543,6 @@ class HomeView extends GetView<HomeController> {
                         controller.copyValue();
                       },
                     ),
-                    _logout()
                   ],
                 )
               ],
